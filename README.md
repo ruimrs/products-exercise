@@ -22,3 +22,8 @@ Added the 'plus' icon and the 'delete' icon to the assets of the project. Change
 ## Fonts
 
 Added 'Roboto-Regular' and 'Roboto-Bold' to the fonts, and declared them as variables in _variables.scss_ so we can use them whenever we want, only need to import this file in the component scss.
+
+
+## Important Notes
+
+Create and Delete components are called as a content to the modal that I created in Products List component.
