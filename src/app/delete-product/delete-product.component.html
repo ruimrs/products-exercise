@@ -1,0 +1,42 @@
+<main>
+  <section class="p-5">
+    <div *ngIf="!isProductDeleted; else showSuccessMessage">
+      <div class="mb-3">
+        <span class="title">Delete product</span>
+      </div>
+      <div class="row mt-3">
+        <div class="col-12">
+          <span>This action will permanently delete this product</span>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-12 text-align-center">
+          <button
+            type="button"
+            class="btn btn-primary me-2"
+            (click)="deleteProduct()"
+          >
+            <span class="btn-text">Delete</span>
+          </button>
+          <button type="button" class="btn btn-secondary" (click)="close()">
+            <span class="btn-text">Cancel</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <ng-template #showSuccessMessage>
+      <div class="row mb-3">
+        <div class="col-12 text-align-center">
+          <span>Your product has been deleted.</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-align-center">
+          <button type="button" class="btn btn-secondary" (click)="close()">
+            <span class="btn-text">Close</span>
+          </button>
+        </div>
+      </div>
+    </ng-template>
+  </section>
+</main>

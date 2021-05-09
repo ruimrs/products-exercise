@@ -1,0 +1,28 @@
+* {
+  font-family: Roboto, sans-serif;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("./Roboto-Regular/Roboto-Regular-webfont.eot");
+  src: url("./Roboto-Regular/Roboto-Regular-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("./Roboto-Regular/Roboto-Regular-webfont.woff") format("woff"),
+    url("./Roboto-Regular/Roboto-Regular-webfont.ttf") format("truetype"),
+    url("./Roboto-Regular/Roboto-Regular-webfont.svg#RobotoRegular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("./Roboto-Bold/Roboto-Bold-webfont.eot");
+  src: url("./Roboto-Bold/Roboto-Bold-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("./Roboto-Bold/Roboto-Bold-webfont.woff") format("woff"),
+    url("./Roboto-Bold/Roboto-Bold-webfont.ttf") format("truetype"),
+    url("./Roboto-Bold/Roboto-Bold-webfont.svg#RobotoBold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}

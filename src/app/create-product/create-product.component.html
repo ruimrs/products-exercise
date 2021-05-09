@@ -1,0 +1,68 @@
+<main>
+  <section class="p-5">
+    <div *ngIf="!isProductCreated; else showSuccessMessage">
+      <div class="mb-3">
+        <span class="title">New product</span>
+      </div>
+      <form [formGroup]="productForm">
+        <div class="row">
+          <div class="col-12">
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                formControlName="name"
+                placeholder="Product name"
+                aria-label="Product name"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <div class="input-group mb-3">
+              <input
+                type="number"
+                class="form-control"
+                formControlName="price"
+                placeholder="Product price"
+                aria-label="Product price"
+                aria-describedby="price"
+              />
+              <span class="input-group-text" id="price">€</span>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-12 text-align-center">
+            <button
+              type="button"
+              class="btn btn-primary me-2"
+              (click)="createProduct()"
+              [disabled]="!productForm.valid"
+            >
+              <span class="btn-text">Create</span>
+            </button>
+            <button type="button" class="btn btn-secondary" (click)="close()">
+              <span class="btn-text">Cancel</span>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <ng-template #showSuccessMessage>
+      <div class="row mb-3">
+        <div class="col-12 text-align-center">
+          <span>Your product has been created.</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-align-center">
+          <button type="button" class="btn btn-secondary" (click)="close()">
+            <span class="btn-text">Close</span>
+          </button>
+        </div>
+      </div>
+    </ng-template>
+  </section>
+</main>
