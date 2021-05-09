@@ -9,6 +9,8 @@ export class ProductListComponent implements OnInit {
   showCreateProductModal: boolean;
   showDeleteProductModal: boolean;
 
+  // CALL THE SUBSCRIBE FROM GETPRODUCTS ENDPOINT
+
   constructor() {}
 
   ngOnInit(): void {}

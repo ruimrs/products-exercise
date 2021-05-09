@@ -18,6 +18,7 @@ export class DeleteProductComponent implements OnInit {
   }
 
   deleteProduct() {
+    // CALL THE SUBSCRIBE FROM DELETE ENDPOINT
     this.isProductDeleted = true;
   }
 }

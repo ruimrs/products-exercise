@@ -54,25 +54,18 @@
     </div>
   </section>
 
-  <!-- Modal to create new product -->
+  <!-- Modal to create/delete product -->
   <div
-    *ngIf="showCreateProductModal"
+    *ngIf="showCreateProductModal || showDeleteProductModal"
     class="modal d-flex justify-content-center align-items-center"
   >
     <div class="modal-content">
       <app-create-product
+        *ngIf="showCreateProductModal"
         (closeModal)="triggerNewProductModal()"
       ></app-create-product>
-    </div>
-  </div>
-
-  <!-- Modal to delete product -->
-  <div
-    *ngIf="showDeleteProductModal"
-    class="modal d-flex justify-content-center align-items-center"
-  >
-    <div class="modal-content">
       <app-delete-product
+        *ngIf="showDeleteProductModal"
         (closeModal)="triggerDeleteProductModal()"
       ></app-delete-product>
     </div>

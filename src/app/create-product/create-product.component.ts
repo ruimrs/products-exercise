@@ -25,6 +25,8 @@ export class CreateProductComponent implements OnInit {
   }
 
   createProduct() {
+    // CALL THE SUBSCRIBE FROM CREATE ENDPOINT
+
     this.isProductCreated = true;
   }
 }
