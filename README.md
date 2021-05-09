@@ -27,3 +27,7 @@ Added 'Roboto-Regular' and 'Roboto-Bold' to the fonts, and declared them as vari
 ## Important Notes
 
 Create and Delete components are called as a content to the modal that I created in Products List component.
+
+## ENDPOINT CALLS
+
+The endpoint calls must be done in the _products-service.service.ts_ file.
