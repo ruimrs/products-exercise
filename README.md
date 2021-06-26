@@ -1,4 +1,5 @@
 # Products exercise
+Small CRUD project for products.
 
 ## Products List
 
