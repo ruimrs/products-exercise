@@ -1,5 +1,6 @@
 # Products exercise
 Small CRUD project for products.
+note: this project is not finished, missing the endpoint calls to crud the products.
 
 ## Products List
 
